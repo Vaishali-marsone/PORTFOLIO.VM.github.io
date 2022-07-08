@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Site</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <style>#headerPopup{
+        width:75%;
+        margin:0 auto;
+      }
+      
+      #headerPopup iframe{
+        width:100%;
+        margin:0 auto;
+      }</style>
+
+</head>
+
+<body>
+    <!-- header section starts  -->
+
+<header class="header">
+
+    <div class="user">
+        <img src="image/vaishali pass photo.jfif" alt="">
+        <h3>Vaishali Marsone</h3>
+        <p>Information Technology (IT) Enthusiast</p>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="index.html">About</a>
+        <a href="index.html">Technical Skills</a>
+        <a href="index.html">Hometown</a>
+        <a href="index.html">Certifications</a>
+        <a href="index.html">Contact</a>
+        <a href="intro.html">My Intro</a>
+        
+    </nav>
+
+</header>
+
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+<!-- theme toggler  -->
+
+<div id="theme-toggler" class="fas fa-moon"></div>
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h1 class="heading"> My <span>Introduction</span></h1>
+        <p></p>
+       <!---->
+    <a href="#headerPopup" id="headerVideoLink" target="intro.mp4" class="btn btn-outline-danger popup-modal" style="margin-bottom: 10px; margin-top: -10px;">My Intro</a>
+      </p>
+      <div id="headerPopup" class="mfp-hide embed-responsive embed-responsive-21by9">
+        <iframe class="embed-responsive-item" width="1000" height="480" src="intro.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        </iframe>
+    </div>
+    <script>
+    $(document).ready(function() {
+    $('#headerVideoLink').magnificPopup({
+    type:'inline',
+    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+  });         
+});
+</script>
+
+</section>
+
+</body>
+</html>
